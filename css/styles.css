@@ -1,3 +1,197 @@
-.color {
-  color: blue;
+:root {
+  --main-text-color: #757575;
+  --black-text-color: #212121;
+  --white-text-color: #ffffff;
+  --accent-color: #2196f3;
+  --hero-background: #2f303a;
+  --team-background: #e5e5e5;
+  --button-radius: 4px;
+}
+
+body {
+  font-family: 'Roboto';
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--black-text-color);
+}
+
+/* Logo */
+
+.logo,
+.footer-logo {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: var(--black-text-color);
+}
+
+.logo span,
+.footer-logo span {
+  color: var(--accent-color);
+}
+
+/* Header */
+
+.header {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--black-text-color);
+}
+
+.header > ul {
+  color: var(--main-text-color);
+}
+
+.nav-link:hover,
+.contacts:hover,
+.nav-link:focus,
+.contacts:focus,
+.nav-list .accent {
+  color: var(--accent-color);
+}
+
+/* Hero */
+
+.hero,
+footer {
+  background-color: var(--hero-background);
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white-text-color);
+}
+
+.button {
+  display: flex;
+  padding: 10px 32px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: var(--button-radius);
+  border: none;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  background-color: var(--accent-color);
+  color: var(--white-text-color);
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--white-text-color);
+  color: var(--accent-color);
+}
+
+/* Benefits */
+
+.benefits-title {
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--black-text-color);
+}
+
+/* Team */
+.team {
+  background-color: var(--team-background);
+}
+
+.team-item {
+  background-color: var(--white-text-color);
+}
+
+.team-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  color: var(--black-text-color);
+}
+
+.team-position {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* Portfolio */
+
+/* Button-filter */
+.filter {
+  background-color: #f5f4fa;
+  color: var(--black-text-color);
+}
+
+.filter:hover,
+.filter:focus {
+  background-color: var(--accent-color);
+  color: var(--white-text-color);
+}
+
+/* Только для видимости в ДЗ, скорее всего меняется инструментами JS */
+.filter.focus {
+  background-color: var(--accent-color);
+}
+
+.portfolio-title {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--black-text-color);
+}
+
+.portfolio-description {
+  font-size: 16px;
+  line-height: 1.88;
+}
+
+.portfolio-item {
+  background-color: var(--white-text-color);
+  border: 1px solid #eeeeee;
+}
+
+/* Footer */
+
+.footer-logo {
+  color: var(--white-text-color);
+}
+
+address {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+}
+
+address a[href^='http'] {
+  color: var(--white-text-color);
 }
